@@ -1,0 +1,3 @@
+
+rootProject.name = 'pojogen'
+include 'model', 'liquibase'
