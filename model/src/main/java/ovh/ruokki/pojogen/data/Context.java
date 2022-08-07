@@ -10,5 +10,6 @@ import lombok.Setter;
 @Setter
 public class Context {
     private final List<Table> tables = new ArrayList<>();
+    private final List<Clazz> clazz = new ArrayList<>();
 
 }
