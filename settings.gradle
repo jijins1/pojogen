@@ -1,3 +1,2 @@
-
 rootProject.name = 'pojogen'
-include 'model', 'liquibase'
+include 'model', 'liquibase', 'jpa', 'writer'

@@ -20,9 +20,7 @@ public class InterpreteTable {
         List<Clazz> listClazzs = context.getTables().stream().map(table -> {
             Clazz clazz = mapper.toClazz(table);
             log.debug("Add class {}", clazz);
-
             return clazz;
-
         }).toList();
         context.getClazz().addAll(listClazzs);
     }
