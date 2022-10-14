@@ -7,7 +7,7 @@ public class TypeChooser {
     public Type chooseType(String typeColumn){
         if(typeColumn.toLowerCase().contains("varchar")){
             return Type.string();
-        }else if(typeColumn.toLowerCase().equals("bigint")){
+        }else if(typeColumn.equalsIgnoreCase("bigint")){
             return Type.longType();
         }else{
             log.warn("Not type found for {}", typeColumn);

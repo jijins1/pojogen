@@ -6,8 +6,8 @@ import lombok.ToString;
 @AllArgsConstructor
 @ToString
 public class Type {
-    private static Type STRING = new Type("String");
-    private static Type LONG = new Type("Long");
+    private static final Type STRING = new Type("String");
+    private static final Type LONG = new Type("Long");
     
     String name;
 

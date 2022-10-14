@@ -5,6 +5,8 @@ import java.util.List;
 
 import lombok.Getter;
 import lombok.Setter;
+import ovh.ruokki.pojogen.data.java.Clazz;
+import ovh.ruokki.pojogen.data.sql.Table;
 
 @Getter
 @Setter

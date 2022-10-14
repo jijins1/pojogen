@@ -5,7 +5,7 @@ import java.util.List;
 import org.mapstruct.factory.Mappers;
 
 import lombok.extern.slf4j.Slf4j;
-import ovh.ruokki.pojogen.data.Clazz;
+import ovh.ruokki.pojogen.data.java.Clazz;
 import ovh.ruokki.pojogen.data.Context;
 import ovh.ruokki.pojogen.model.interprete.mapper.ClazzMapper;
 

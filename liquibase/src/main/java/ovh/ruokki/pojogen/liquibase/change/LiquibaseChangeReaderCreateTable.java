@@ -2,9 +2,9 @@ package ovh.ruokki.pojogen.liquibase.change;
 
 import liquibase.change.core.CreateTableChange;
 import lombok.extern.slf4j.Slf4j;
-import ovh.ruokki.pojogen.data.Column;
+import ovh.ruokki.pojogen.data.sql.Column;
 import ovh.ruokki.pojogen.data.Context;
-import ovh.ruokki.pojogen.data.Table;
+import ovh.ruokki.pojogen.data.sql.Table;
 import ovh.ruokki.pojogen.liquibase.type.TypeChooser;
 
 @Slf4j

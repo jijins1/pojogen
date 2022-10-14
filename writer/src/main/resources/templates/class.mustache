@@ -1,0 +1,27 @@
+package {{new.package}};
+
+{{#new.imports}}
+import {{package}}.{{name}};
+{{/new.imports}}
+
+{{#new.annotations}}
+@{{name}}
+{{/new.annotations}}
+public class {{new.name}}{{#new.extend}} extends {{name}}{{/new.extend}}{{#new.implementList}} implements {{name}}{{/new.implementList}} {
+{{#new.fields}}
+    {{#annotations}}
+    @{{name}}
+    {{/annotations}}
+    private {{type.name}} {{name}};
+{{/new.fields}}
+
+{{#new.fields}}
+    public {{type.name}} get{{#capitalize}}{{name}}{{/capitalize}}(){
+        return this.{{name}};
+    }
+
+    public void set{{#capitalize}}{{name}}{{/capitalize}}({{type.name}} {{name}}){
+        this.{{name}} = {{name}};
+    }
+{{/new.fields}}
+}

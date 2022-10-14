@@ -1,15 +1,12 @@
 package ovh.ruokki.pojogen.model.interprete;
 
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.util.List;
-
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import ovh.ruokki.pojogen.data.Column;
+import ovh.ruokki.pojogen.data.java.Clazz;
+import ovh.ruokki.pojogen.data.sql.Column;
 import ovh.ruokki.pojogen.data.Context;
-import ovh.ruokki.pojogen.data.Table;
+import ovh.ruokki.pojogen.data.sql.Table;
 import ovh.ruokki.pojogen.data.Type;
 import ovh.ruokki.pojogen.model.exception.ReadingException;
 
@@ -36,7 +33,7 @@ public class InterpreteTableTest {
                .hasSize(1)
                .anySatisfy(field -> {
                   Assertions.assertThat(field.getName()).isEqualTo("a");
-                  Assertions.assertThat(field.getType()).isEqualTo(Type.string());
+                  Assertions.assertThat(field.getType()).isEqualTo(Clazz.STRING);
                });
 
       });
